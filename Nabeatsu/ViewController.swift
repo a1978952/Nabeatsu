@@ -14,7 +14,6 @@ class ViewController: UIViewController {
     @IBOutlet var countLabel: UILabel!
     @IBOutlet var faceLabel: UILabel!
     
-    var iine: Array = ["やるのまだやるの？","押しすぎじゃない","そろそろやめない？","疲れないの？"]
     override func viewDidLoad() {
         super.viewDidLoad()
         
