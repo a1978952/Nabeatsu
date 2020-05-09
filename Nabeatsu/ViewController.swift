@@ -6,6 +6,7 @@
 //  Created by nagata on 2017/06/19.
 //  Copyright © 2017年 Life is Tech!. All rights reserved.
 //
+
 import UIKit
 
 class ViewController: UIViewController {
@@ -18,8 +19,8 @@ class ViewController: UIViewController {
         super.viewDidLoad()
         
     }
-    
-    func isAho() -> Bool {
+    var line: Array = ["まだやるの？","やりすぎ笑","ウケる笑笑","辞めな！！"]
+        func isAho() -> Bool {
         // 問題1: 3の倍数かどうか調べる
         if number%3 == 0 {
             return true
@@ -51,13 +52,13 @@ class ViewController: UIViewController {
         }
         return false
     }
-    @IBAction func plusButton(){
+    @IBAction func pluscount(){
         number = number + 1
         countLabel.text = String(number)
         
        
         if ii() == true {
-          faceLabel.text = iine[Int.random(in:0..<iine.count)]
+          faceLabel.text = line[Int.random(in:0..<line.count)]
         }else  if isAho() == true {
                    
                    faceLabel.text = "ﾍ(ﾟ∀ﾟﾍ)ｱﾋｬ"
@@ -67,7 +68,7 @@ class ViewController: UIViewController {
                }
         }
     @IBAction func clear() {
-           number = number*0
+           number  = number*0
        }
 
     }
